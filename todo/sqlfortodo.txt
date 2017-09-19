@@ -1,0 +1,11 @@
+table creation for table todolist in database todo
+
+CREATE TABLE todolist (ToDoID INT NOT NULL AUTO_INCREMENT
+					  , ToDoTitle varchar(50) DEFAULT NULL
+					  , ToDoDescription varchar(1000) DEFAULT NULL
+					  , Complete ENUM('true', 'false') NOT NULL DEFAULT 'false'
+					  , ToDueDate datetime DEFAULT NULL
+					  , EntryTS datetime DEFAULT NULL
+					  , UpdateTS datetime DEFAULT NULL
+					  , CompleteTS datetime DEFAULT NULL
+					  , PRIMARY KEY(ToDoID));
